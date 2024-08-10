@@ -1,0 +1,13 @@
+<div class="card card--half">
+  <h2 class="card-title">البيانات الشخصية</h2>
+  {{ range .Site.Data.personalinfo }}
+  <div class="line">
+    <div class="line__head">
+      <i class="{{ .icon }}"></i>
+      <h3>{{ .title }}</h3>
+      <h4>{{ .time }}</h4>
+    </div>
+    <div class="line__body">{{ .content }}</div>
+  </div>
+  {{ end }}
+</div>
